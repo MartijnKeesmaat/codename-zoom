@@ -1,0 +1,79 @@
+.panels
+  position: fixed
+  z-index: 2
+
+  display: flex
+
+  width: 100vw
+  height: 100vh
+
+.panel
+  position: relative
+
+  display: flex
+  align-items: center
+  flex: 1
+  flex-direction: column
+  justify-content: flex-end
+
+  height: 100vh
+  padding-bottom: 90px
+
+  .panel__img
+    position: absolute
+    z-index: -1
+    top: 0
+
+    width: 100%
+    height: 100%
+
+    transition: .3s all ease
+
+.panel__sub-title
+  margin: 0
+
+  text-align: center
+  text-transform: uppercase
+
+  color: #FFFFFF
+
+  font-family: HelveticaNeue
+  font-size: 15px
+
+.panel__title
+  margin: 0
+  margin-top: 11px
+
+  text-align: center
+  text-transform: uppercase
+
+  color: #FFFFFF
+
+  font-family: EmpiricaHeadExtraLight
+  font-size: 64.68px
+  line-height: 67.76px
+
+.panel__divider
+  margin-top: 15px
+  margin-bottom: 14px
+
+.panel_desc
+  max-width: 284px
+  margin: 0
+  margin: 0 auto
+
+  text-align: center
+
+  color: #FFFFFF
+
+  font-family: HelveticaNeue-Light
+  font-size: 9.8px
+  line-height: 16.1px
+
+canvas
+  position: absolute
+  z-index: -1
+  right: 0
+  left: 0
+
+  margin: 0 auto
