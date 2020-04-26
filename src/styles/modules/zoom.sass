@@ -1,0 +1,252 @@
+.border-thing
+  position: fixed
+  z-index: 1
+  top: 31px
+  right: 63px
+
+  width: 22.4rem
+
+.slides
+  position: relative
+
+  width: 100vw
+  height: 100vh
+
+.slide
+  position: absolute
+  top: 0
+  left: 0
+
+  visibility: hidden
+
+  opacity: 0
+
+  &:first-child
+    visibility: visible
+
+    opacity: 1
+
+.slide__img
+  position: absolute
+  top: 0
+  left: 0
+
+  width: 100vw
+  height: 100vh
+
+  background-size: cover
+
+.slide__caption
+  position: fixed
+  bottom: 66px
+  left: 62px
+
+  display: flex
+  align-items: flex-start
+  flex-direction: column
+
+  transform-origin: left
+
+.slide__sub-title
+  margin: 0
+
+  letter-spacing: 2px
+  text-transform: uppercase
+
+  color: #96B4BF
+
+  font-family: EmpiricaHead
+  font-size: 15px
+
+.slide__title
+  max-width: 396px
+  margin-top: 11px
+  margin-bottom: 24px
+
+  text-transform: uppercase
+
+  color: #FFFFFF
+
+  font-family: EmpiricaHeadExtraLight
+  font-size: 73.92px
+  line-height: 72.44px
+
+.slide__actions
+  height: 28px
+
+.slide__detail
+  position: fixed
+  z-index: 13
+  right: 0
+
+  width: 700px
+  height: 100vh
+  padding-left: 90px
+
+  transform: translateX(100%)
+
+  background: #161513
+
+.slide__gallery
+  display: flex
+
+  .reveal
+    margin-right: 25px
+
+.slide__tagline
+  margin-top: 60px
+  margin-bottom: 50px
+
+  span
+    display: flex !important
+    align-items: flex-start
+
+  img
+    margin-right: 26px
+
+  p
+    max-width: 433px
+    margin: 0
+
+    letter-spacing: 0
+
+    opacity: 0.8
+    color: #FFFFFF
+
+    font-family: EmpiricaHeadExtraLight
+    font-size: 16.5px
+    line-height: 26.4px
+
+.slide__story
+
+  h4
+    margin-top: 0
+    margin-bottom: 0
+
+    letter-spacing: 0
+
+    color: #FFFFFF
+
+    font-family: EmpiricaHead
+    font-size: 17px
+    line-height: 26.4px
+
+  span
+    display: block
+
+    margin-bottom: 12px
+
+  p
+    max-width: 491px
+
+    opacity: 0.7
+    color: #FFFFFF
+
+    font-family: HelveticaNeue-Light
+    font-size: 15px
+    line-height: 19.6px
+
+.icons
+  margin-top: 51px
+  margin-bottom: 59px
+
+.slide-pagination
+  position: fixed
+  right: -322px
+  bottom: 66px
+
+  display: flex
+
+  padding-top: 44px
+  padding-left: 11px
+
+.slider-pagination__item
+  position: relative
+
+  margin-right: 22px
+
+  &:first-child
+    height: 73px
+
+    img
+      // transform: translate(-11px, -44px)
+
+      // box-shadow: 0 9px 24px 0 rgba(0,0,0,0.30)
+
+  &:last-child
+    margin-right: 0
+
+  .text
+    position: absolute
+    z-index: -1
+    top: 0
+    // top: 44px
+    // left: 11px
+
+
+    width: 119px
+    height: 73px
+    padding-top: 30px
+    padding-left: 13px
+
+    border-radius: 6px
+    background: #FFFFFF
+
+    p
+      margin: 0
+      margin-top: 6px
+      margin-bottom: -5px
+
+      text-transform: uppercase
+
+      opacity: 0.5
+      color: #000000
+
+      font-family: HelveticaNeue-Bold
+      font-size: 8px
+
+    h4
+      margin: 0
+
+      opacity: 0.7
+      color: #000000
+
+      font-family: EmpiricaHead
+      font-size: 13px
+      line-height: 18px
+
+.reveal
+  overflow: hidden
+
+.reveal span
+  display: block
+
+  transform: translateY(120%)
+
+.slider-pagination__item:nth-child(2) .slide-pagination__loader
+  height: 91%
+
+  background: #babaa6a6
+
+.slide-pagination__loader
+  position: absolute
+  top: 0
+  top: -44px
+  left: -11px
+  // display: none
+
+
+  width: 100%
+  height: 100%
+
+  transform: scaleX(0)
+
+  border-radius: 6px
+  background: #a6a8baa6
+
+.slider-pagination__item:first-child
+  .slide-pagination__loader
+    display: block
+
+.slide-pagination
+  overflow: hidden

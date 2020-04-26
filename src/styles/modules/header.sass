@@ -9,8 +9,9 @@ header
   width: calc( 100% - 124px)
 
 .header__left
-  display: flex
-  justify-content: center
+  a
+    display: flex
+    justify-content: center
 
 .menu
   display: flex
@@ -20,11 +21,17 @@ header
   width: 70px
   height: 128px
 
-  background: #A6A8BA
+  background: #fff
 
 .menu__icon
   width: 26px
 
 .logo
+  width: 81px
   margin-left: 31px
-  // .socials
+
+.socials
+  position: fixed
+  z-index: 10
+  top: 58px
+  right: 64px
